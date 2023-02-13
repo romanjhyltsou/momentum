@@ -1,0 +1,210 @@
+[
+    { 
+    "ru":{
+      "text": "Пишите код так, как будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете",
+      "author": "Стив Макконнелл"
+         },
+    "en":{
+       "text": "Write code like the maintainer would be a violent psychopath who knows where you live",
+       "author": "Steve McConnell"
+        }    
+    },
+    {
+      "ru":{
+      "text": "Сложность программы растет до тех пор, пока не превысит способности программиста",
+      "author": "Артур Блох. Законы Мэрфи"
+          },
+      "en":{
+        "text": "The complexity of the program grows until it exceeds the ability of the programmer.",
+        "author": "Arthur Bloch. Murphy's laws"
+          }
+    },
+    {
+      "ru":{
+        "text": "Ходить по воде и разрабатывать программы, следуя ТЗ, очень просто… если они заморожены",
+        "author": "И. Берард"
+            },
+        "en":{
+          "text": "It's very easy to walk on water and develop programs according to the ToR... if they are frozen",
+          "author": "I. Berard"
+          }
+
+    },
+    {
+      "ru":{
+        "text": "В теории, теория и практика неразделимы. На практике это не так.",
+        "author": "Йогги Берра"
+           },
+      "en":{
+         "text": "In theory, theory and practice are inseparable. In practice this is not the case",
+         "author": "Yoggy Berra"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "Многие из вас знакомы с достоинствами программиста. Их всего три, и разумеется это: лень, нетерпеливость и гордыня.",
+        "author": "Ларри Уолл"
+           },
+      "en":{
+         "text": "Many of you are familiar with the virtues of being a programmer. There are only three of them, and of course this is: laziness, impatience and pride",
+         "author": "Larry Wall"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "Программы должны писаться для людей, которые будут их читать, а машины, которые будут эти программы исполнять — второстепенны., нетерпеливость и гордыня.",
+        "author": "Гарольд Абельсон"
+           },
+      "en":{
+         "text": "Programs must be written for the people who will read them, and the machines that will execute these programs are secondary., impatience and pride",
+         "author": "Harold Abelson"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "Иногда лучшие программы создаются на бумажке. Запрограммировать их — второстепенная вещь.",
+        "author": "Макс Канат-Александр"
+           },
+      "en":{
+         "text": "Sometimes the best programs are written on paper. Programming them is a secondary thing",
+         "author": "Max Kanat-Alexander"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "Отладка кода — это как охота. Охота на баги.",
+        "author": "Амит Калантри"
+           },
+      "en":{
+         "text": "Debugging code is like hunting. Hunting for bugs",
+         "author": "Amit Kalantry"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "Программисты — не математики, как бы нам этого ни хотелось.",
+        "author": "Ричард П. Габриэль"
+           },
+      "en":{
+         "text": "Programmers are not mathematicians, as much as we would like to",
+         "author": "Richard P. Gabriel"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "Простота — залог надежности.",
+        "author": "Эдсгер В. Дейкстра"
+           },
+      "en":{
+         "text": "Simplicity is the key to reliability",
+         "author": "Edsger W. Dijkstra"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": " Есть всего два типа языков программирования: те, на которые люди всё время ругаются, и те, которые никто не использует.",
+        "author": "Бьерн Страуструп"
+           },
+      "en":{
+         "text": "There are only two types of programming languages: those that people swear at all the time, and those that no one uses.",
+         "author": "Bjorn Stroustrup"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "Тестирование не позволяет обнаружить такие ошибки, как создание не того приложения.",
+        "author": "Стив МакКоннелл"
+           },
+      "en":{
+         "text": "Testing does not detect errors such as creating the wrong application.",
+         "author": "Steve McConnell"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "Лень — главное достоинство программиста.",
+        "author": "Ларри Уолл"
+           },
+      "en":{
+         "text": "Laziness is the main virtue of a programmer.",
+         "author": "Larry Wall"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "С имеет мощь ассемблера и удобство… ассемблера.",
+        "author": "Деннис Ричи"
+           },
+      "en":{
+         "text": "has the power of assembler and the convenience of… assembler.",
+         "author": "Dennis Ritchie"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "Тяжело улучшать код, который до этого уже улучшали много раз.",
+        "author": "Ларри Уолл"
+           },
+      "en":{
+         "text": "It's hard to improve code that has already been improved many times before.",
+         "author": "Larry Wall"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "У меня предчувствие, что неизвестные цепочки ДНК расшифруются в копирайты и патенты.",
+        "author": "Дональд Кнут"
+           },
+      "en":{
+         "text": "I have a hunch that unknown strands of DNA will be deciphered into copyrights and patents.",
+         "author": "Donald Knuth"
+          } 
+
+    },
+    {
+      "ru":{
+        "text": "Если оптимизировать всё, что можно, то вы будете вечно несчастным.",
+        "author": "Дональд Кнут"
+           },
+      "en":{
+         "text": "If you optimize everything you can, then you will be forever unhappy.",
+         "author": "Donald Knuth"
+          }
+
+    },
+    {
+      "ru":{
+        "text": "Программы становятся медленнее быстрее, чем «железо» становится быстрее.",
+        "author": "Никлаус Вирт"
+           },
+      "en":{
+         "text": "Programs are getting slower faster than hardware is getting faster.",
+         "author": "Niklaus Wirth"
+          }
+
+    },
+    {
+      "ru":{
+        "text": "Некоторые проблемы лучше не решать, а избегать.",
+        "author": "Тони Хоар"
+           },
+      "en":{
+         "text": "Some problems are better not solved, but avoided.",
+         "author": "Tony Hoare"
+          }
+
+    }
+    
+  ]  

@@ -1,0 +1,69 @@
+{ 
+  "playin":{
+    "ru": "ИГРАЕТ",
+    "en": "PLAYING"
+  },
+  "of":{
+    "ru": "ИЗ",
+    "en": "OF"
+  },
+  "wind__speed":{
+    "ru": "Скорость ветра:",
+    "en": "Wind speed:"
+  },
+  "wind__speed-ms":{
+    "ru": "м/с",
+    "en": "m/s"
+  },
+  "humidity":{
+    "ru": "Влажность:",
+    "en": "Humidity"
+  },
+  "language":{
+    "ru": "Выбрать язык:",
+    "en": "Select language:"
+  },
+  "source":{
+    "ru": "Источник фото:",
+    "en": "Photo source:"
+  },
+  "tags":{
+    "ru": "Теги фото:",
+    "en": "Photo tags:"
+  },
+  "time":{
+    "ru": "Время:",
+    "en": "Time:"
+  },
+  "date":{
+    "ru": "Дата:",
+    "en": "Date:"
+  },
+  "greeting":{
+    "ru": "Приветствие:",
+    "en": "Greeting:"
+  },
+  "quote":{
+    "ru": "Цитата:",
+    "en": "Quote:"
+  },
+  "weather":{
+    "ru": "Погода:",
+    "en": "Weather:"
+  },
+  "player":{
+    "ru": "Аудиоплеер:",
+    "en": "Audio player:"
+  },
+  "yes":{
+    "ru": "да",
+    "en": "yes"
+  },
+  "no":{
+    "ru": "нет",
+    "en": "no"
+  }   
+}
+
+
+
