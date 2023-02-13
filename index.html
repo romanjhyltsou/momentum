@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/player.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <div class="main__wrapper">
+  <header class="header">
+
+    <div class="player">
+      <div class="wrapper">
+          <div class="details">
+              <div class="now-playing">
+                <span class="lng-playin">ИГРАЕТ</span>
+                <span class="now-num-x">x</span>  
+                <span class="lng-of"> ИЗ</span>
+                <span class="now-num-y"> y</span>
+                </div>
+              <div class="track-art"></div>
+              <div class="track-name">Track Name</div>
+              <div class="track-artist">Track Artist</div>
+          </div>
+
+          <div class="slider_container">
+              <div class="current-time">00:00</div>
+               <input type="range" min="1" max="100" value="0" class="seek_slider">
+               <div class="total-duration">00:00</div>
+          </div>
+
+          <div class="slider_container">
+              <i class="fa fa-volume-down"></i>
+               <input type="range" min="0" max="100" value="99" class="volume_slider"> 
+               <i class="fa fa-volume-up"></i>
+          </div>
+
+          <div class="buttons">
+              <div class="random-track"> 
+                  <i class="fas fa-random fa-2x" title="random"></i>
+              </div>
+              <div class="prev-track"> 
+                   <i class="fa fa-step-backward fa-2x"></i>
+               </div>
+               <div class="playpause-track" >
+                   <i class="fa fa-play-circle fa-4x"></i>
+               </div>
+               <div class="next-track">
+                   <i class="fa fa-step-forward fa-2x"></i>
+               </div>
+               <div class="repeat-track"> 
+                   <i class="fa fa-repeat fa-2x" title="repeat"></i>
+               </div>
+          </div>
+
+           <div id="wave">
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+               <span class="stroke"></span>
+           </div>  
+      </div>
+
+      <div class="audio-list">
+
+      </div>
+  </div>
+    
+    <div class="weather">
+      <input type="text" class="city"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="weather-description" lng-description></span>
+        <span class="temperature"></span>
+      </div>
+      <div class="wind">
+        <span class="lng-wind__speed">Скорость ветра:</span>
+        <span class="wind__speed-num"></span>
+        <span class="lng-wind__speed-ms">м/с:</span>
+      </div>
+      <div class="humidity">
+        <span class="lng-humidity">Влажность:</span>
+        <span class="humidity-num"></span>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+
+    <div class="greeting-container">
+
+      <span class="greeting"></span>
+      <input class="name"  type="text" placeholder="[Введите имя]" />
+
+    </div>
+    
+  </main>
+  <footer class="footer">
+
+    <div class="to-do-list__wrapper">
+      <div class="container__todo setting__switch-on-off">
+            <form>
+              <div class="container__todo-btn">
+                <input type="text" class="todo-input" placeholder="Добавить заметку...">
+                <button type="submit" class="todo-button">
+                  <i class="fas fa-plus-square"></i>
+                </button>
+              </div>
+                  
+            </form>
+              <div class="todo__list-container">
+                  <ul class="todo-list"></ul>
+              </div>
+      </div>
+
+      <div class="container__todo-svg">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	        width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+          <g>
+	          <polygon fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="23,41 22,46 27,45 42,30 38,26 	"/>
+	          <line fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="39" y1="33" x2="35" y2="29"/>
+          </g>
+          <polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="23,8 10,8 10,63 54,63 54,8 41,8 "/>
+          <polygon fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="36,5 36,1 28,1 28,5 24,5 22,13 42,13 40,5 
+	          "/>
+          </svg>
+        
+        </div>
+    </div>
+
+    <div class="wrapper__change-quote">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+
+    <div class="setting__wrapper">
+      <div class="popap__wraper">
+      <ul class="container_settings setting__switch-on-off">
+
+        <li>
+          <p class="lang_language lng-language">Выбрать язык:</p>
+          <div>
+            <select class="select__lng" name="lang">
+              <option class="russia" value="ru" selected="">русский</option>
+              <option class="english"  value="en">english</option>
+            </select>
+
+          </div>
+        </li>
+
+        <li>
+          <p class="lang__source lng-source">Источник фото:</p>
+            <select class="select__api" name="sourse">
+              <option class="option" value="GitHub" selected="">GitHub</option>
+              <option class="option" value="Unsplash API">Unsplash API</option>
+              <option class="option" value="Flickr API">Flickr API</option>
+            </select>
+
+        </li>
+
+        <li>
+          <p class="lang__tags lng-tags">Теги фото:</p>
+          <div>
+            <input class="input__tags" type="text" disabled="">
+          </div>
+        </li>
+
+        <li>
+          <p class="lang__time lng-time">Время:</p>
+          <div>
+            <button id="local-time" class="btn__setting time__btn lng-yes">да</button>
+            <button id="local-time" class="btn__setting-no time__btn-no lng-no switch">нет</button>
+          </div>
+        </li>
+
+        <li>
+          <p class="lang__date lng-date">Дата:</p>
+          <div>
+            <button id="local" class="btn__setting date__btn lng-yes">да</button>
+            <button id="local" class="btn__setting-no date__btn-no lng-no switch">нет</button>
+          </div>
+        </li>
+
+        <li>
+          <p class="lang__greeting lng-greeting">Приветствие:</p>
+          <div>
+            <button class="btn__setting greeting__btn lng-yes">да</button>
+            <button class="btn__setting-no greeting__btn-no lng-no switch">нет</button>
+          </div>
+        </li>
+
+        <li>
+          <p class="lang__quote lng-quote">Цитата:</p>
+          <div>
+            <button class="btn__setting quotes__btn lng-yes">да</button>
+            <button class="btn__setting-no quotes__btn-no lng-no switch">нет</button>
+          </div>
+        </li>
+
+        <li>
+          <p class="lang__weather lng-weather">Погода:</p>
+          <div>
+            <button class="btn__setting weather__btn lng-yes">да</button>
+            <button class="btn__setting-no weather__btn-no lng-no switch">нет</button>
+          </div>
+        </li>
+
+        <li>
+          <p class="lang__player lng-player">Аудиоплеер:</p>
+          <div>
+            <button class="btn__setting player__btn lng-yes">да</button>
+            <button class="btn__setting-no player__btn-no lng-no switch">нет</button>
+          </div>
+        </li>
+
+        <li>
+          
+            <a href="https://rs.school/js-stage0/">
+              <img src="./assets/svg/icon-rsschool.svg" alt="rs_school_js_icon">
+            </a>
+
+          <a href="https://github.com/romanjhyltsou?tab=repositories">
+            <img src="./assets/svg/github.svg" alt="github_icon">
+          </a>
+         
+        </li>
+        
+      </ul>
+    </div>
+       <div class="setting__svg">
+          <?xml version="1.0" ?><svg width="64px" height="64px" viewBox="0 0 256 256" id="Layer_1" style="enable-background:new 0 0 256 256;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M230.5,173c-1.3-6-5.6-11-11.4-13l-48.6-17.3L128,185.2l-42.4-42.4L37,160c-5.8,2.1-10.1,7.1-11.4,13L8.7,252.4h238.7   L230.5,173z M35.4,175.1c0.6-2.6,2.4-4.7,4.9-5.6l42.6-15.1l45.1,45.1l45.1-45.1l42.6,15.1c2.5,0.9,4.4,3,4.9,5.6l14.3,67.2H21.1   L35.4,175.1z" fill="white"/><path d="M65.2,82.1l4.5,0.4l0.3,0c1,0,1.9,0,2.9,0c1,0,2.1,0,3.1,0c1.2,4.2,2.8,8.1,5,11.9c-0.7,0.7-1.3,1.3-2,2l-2,2   c-0.3,0.3-0.6,0.6-0.8,0.8l-2.8,3l2.4,3.3c4.1,5.6,9,10.6,14.7,14.6l3.3,2.4l3-2.8l0.4-0.4c1.1-1.2,2.3-2.3,3.4-3.5   c0.3-0.3,0.6-0.6,0.9-0.9c3.7,2.1,7.7,3.7,11.8,4.9c0,0.7,0,1.5,0,2.2c0,1.3,0,2.6,0,4l0.3,4.5l4,0.6c3.3,0.5,6.8,0.8,10.2,0.8   c3.4,0,6.9-0.3,10.2-0.8l4-0.6l0.3-4.4l0-0.2c0-1.3,0-2.6,0-4c0-0.7,0-1.5,0-2.2c4.1-1.1,8.1-2.8,11.8-4.9c0.3,0.3,0.6,0.6,0.9,0.9   c1.2,1.1,2.3,2.3,3.4,3.4l3.4,3.2l3.3-2.4c5.7-4.1,10.6-9,14.7-14.6l2.4-3.3l-2.8-3c-0.2-0.2-0.5-0.5-0.8-0.8l-1.9-2   c-0.7-0.7-1.3-1.3-2-2c2.1-3.8,3.8-7.7,5-11.9c0.4,0,0.8,0,1.1,0c1.7,0,3.3,0,5,0l4.7-0.4l0.6-3.8c0.6-3.4,0.8-6.9,0.8-10.4   c0-3.5-0.3-7-0.9-10.5l-0.6-4l-4-0.2l-2.8,0c-1.4,0-2.7,0-4.1,0c-1.2-4.1-2.8-8-4.9-11.7c1.5-1.5,3-3,4.6-4.5l3.1-3l-2.5-3.5   c-4.1-5.7-9.1-10.7-14.8-14.8l-3.5-2.5l-3,3.1c-0.9,1-1.9,1.9-2.8,2.8c-0.6,0.6-1.2,1.2-1.7,1.7c-3.7-2.1-7.7-3.7-11.8-4.8l0-3.2   c0-1,0-2,0-3.3V5l-4.2-0.7c-6.7-1.1-13.8-1.1-20.5,0l-4.4,0.8l0.2,4.5c0,1,0,2,0,3.1l0,1.5l0,1.7c-4.1,1.1-8,2.8-11.8,4.8   c-0.6-0.6-1.2-1.2-1.7-1.7c-0.9-0.9-1.9-1.9-2.8-2.8l-3-3.1l-3.5,2.5c-5.7,4.1-10.7,9.1-14.8,14.8l-2.5,3.5l3.1,3   c1.5,1.5,3,3,4.6,4.5c-2.1,3.7-3.7,7.6-4.9,11.7c-1.4,0-2.7,0-4.1,0l-6.8,0.3l-0.6,4c-0.6,3.5-0.9,7-0.9,10.5c0,3.5,0.3,7,0.8,10.4   L65.2,82.1z M74,63.2c1.7,0,3.3,0,4.9,0.1c0.9,0,1.7-0.1,2.4-0.2l3.1-0.8l0.6-3.1c1.1-5.6,3.3-10.8,6.5-15.6l1.8-2.7l-1.7-2.8   c-0.5-0.8-1.2-1.5-1.7-2.1l-1-1c-0.7-0.7-1.4-1.4-2.2-2.2c2-2.3,4.2-4.5,6.5-6.5c1.2,1.2,2.3,2.3,3.5,3.5c0.5,0.5,1.3,1.2,2.4,1.7   l2.5,1.1l2.3-1.5c4.8-3.2,10-5.3,15.6-6.4l3-0.6l0.8-3c0.2-0.7,0.3-1.4,0.2-2.2c0-1.1,0-2.2,0-3.3l0-1.8c2.9-0.2,5.9-0.2,8.8,0   l0,1.8c0,1.1,0,2.2,0,3.3c0,0.8,0.1,1.5,0.2,2.2l0.8,3l3,0.6c5.6,1.1,10.9,3.3,15.6,6.4l2.3,1.5l2.5-1.1c1.1-0.5,1.9-1.2,2.4-1.8   c1.1-1.2,2.3-2.3,3.5-3.5c2.4,2,4.5,4.1,6.5,6.5c-0.7,0.7-1.4,1.4-2.2,2.2l-1,1c-0.6,0.6-1.2,1.2-1.7,2.1l-1.7,2.8l1.8,2.7   c3.2,4.8,5.4,10,6.5,15.6l0.6,3.1l3.1,0.8c0.7,0.2,1.6,0.3,2.4,0.2c1.6-0.1,3.2-0.1,4.9-0.1c0.1,1.5,0.2,3.1,0.2,4.6   c0,1.5-0.1,3.1-0.2,4.6c-0.3,0-0.6,0-0.9,0c-1.6,0-3.1,0-4.8,0l-4.5,0.3l-0.7,3.7c-1.1,5.7-3.4,11-6.6,15.8l-2,2.9l2,2.8   c0.3,0.4,0.6,0.8,1.1,1.2c1.3,1.2,2.5,2.4,3.7,3.7c-2,2.3-4.1,4.4-6.4,6.4c-0.2-0.2-0.4-0.4-0.6-0.6c-1.1-1.1-2.1-2.1-3.2-3.2   c-0.4-0.4-0.9-0.8-1.3-1.1l-2.8-1.9l-2.8,1.9c-4.8,3.2-10.1,5.4-15.7,6.5l-3.2,0.6l-0.8,3.1c-0.2,0.7-0.2,1.4-0.2,2.2   c0,1.7,0,3.4,0,5c-2.9,0.2-5.9,0.2-8.8,0c0-1.7,0-3.4,0-5c0-0.8,0-1.5-0.2-2.2l-0.8-3.1l-3.2-0.6c-5.6-1.1-10.9-3.3-15.7-6.5   l-2.8-1.9l-2.8,1.9c-0.5,0.3-0.9,0.7-1.3,1.1c-1,1.1-2.1,2.1-3.2,3.2c-0.2,0.2-0.4,0.4-0.6,0.6c-2.3-1.9-4.5-4.1-6.4-6.4   c1.2-1.2,2.5-2.5,3.7-3.7c0.4-0.4,0.8-0.8,1.1-1.2l2-2.8l-2-2.9c-3.2-4.8-5.5-10.1-6.6-15.8l-0.7-3.7l-3.8-0.3l-0.8,0   c-0.9,0-1.8,0-2.7,0c-1,0-2,0-3,0c-0.1-1.5-0.2-3.1-0.2-4.6C73.8,66.3,73.9,64.8,74,63.2z" fill="white"/><path d="M104.2,85c1.9,2.6,4.1,4.8,6.7,6.7c3.7,2.6,7.9,4.4,12.4,5.1c1.5,0.2,3.1,0.4,4.7,0.4c1.6,0,3.1-0.1,4.7-0.4   c4.4-0.7,8.7-2.5,12.4-5.1c2.6-1.9,4.9-4.1,6.7-6.7c2.7-3.7,4.5-8,5.2-12.4v0c0.3-1.6,0.4-3.1,0.4-4.7c0-1.6-0.1-3.2-0.4-4.8   c-0.7-4.4-2.5-8.7-5.1-12.3c-1.9-2.6-4.1-4.9-6.8-6.7c-3.7-2.6-7.9-4.4-12.4-5.1c-3-0.5-6.3-0.5-9.4,0c-4.4,0.7-8.7,2.5-12.4,5.1   c-2.6,1.9-4.9,4.1-6.8,6.7c-2.6,3.6-4.4,7.9-5.1,12.3c-0.3,1.6-0.4,3.2-0.4,4.8c0,1.6,0.1,3.2,0.4,4.8   C99.8,77.1,101.6,81.4,104.2,85z M109,64.7c0.5-2.9,1.6-5.7,3.4-8.1c1.2-1.7,2.7-3.2,4.5-4.4c2.4-1.7,5.2-2.9,8.1-3.3   c1-0.2,2-0.2,3.1-0.2c1.1,0,2.1,0.1,3.1,0.2c2.9,0.5,5.7,1.6,8.1,3.3c1.7,1.2,3.2,2.7,4.4,4.4c1.7,2.4,2.9,5.2,3.4,8.1   c0.2,1,0.3,2.1,0.3,3.1c0,1.1-0.1,2.1-0.2,3.1c-0.5,2.9-1.7,5.7-3.4,8.1c-1.2,1.7-2.7,3.2-4.4,4.4c-2.4,1.7-5.2,2.9-8.1,3.3   c-2,0.3-4.1,0.3-6.1,0c-2.9-0.5-5.7-1.6-8.1-3.3c-1.7-1.2-3.2-2.7-4.4-4.4c-1.7-2.4-2.9-5.2-3.4-8.1c-0.2-1-0.2-2.1-0.2-3.1   C108.8,66.8,108.9,65.7,109,64.7z" fill="white"/></g></svg>
+        </div>
+    </div>
+
+  </footer>
+  <script src="js/script.js" type="module"></script>
+</div>
+</body>
+</html>
